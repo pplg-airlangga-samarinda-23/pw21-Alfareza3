@@ -43,8 +43,8 @@ header("location:barang.php");
         <div class="form-item">
             <label for="status">Status</label>
             <select name="status" id="status">
-                <option value="baik" <?=($row['status'] == 'baik')?'selected':''?> >Baik</option>
-                <option value="rusak" <?=($row['status'] == 'rusak')?'selected':''?> >Rusak</option>
+                <option value="baik" <?=($row['status'] === 'baik')?'selected':''?> >Baik</option>
+                <option value="rusak" <?=($row['status'] === 'rusak')?'selected':''?> >Rusak</option>
             </select>
         </div>
         <button type="submit">Submit</button>
